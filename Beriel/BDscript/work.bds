@@ -1,0 +1,6 @@
+$nomention
+$var[api;api url]
+$httpPost[$var[api]/api/start-economy/$guildID/]
+$if[$httpStatus==201]
+$description[Genial el servidor ya esta listo para la economia]
+$endif
